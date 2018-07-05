@@ -1,0 +1,11 @@
+query AllProducts {
+list_products {
+...ProductDetails
+}
+}
+
+fragment ProductDetails on Product {
+id
+name
+price
+}
