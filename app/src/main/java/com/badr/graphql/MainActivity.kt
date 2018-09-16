@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         apolloClient = ApolloClient.builder()
-                .serverUrl("http://ayk-test.badrit.com/graphql")
+                .serverUrl("YOUR URL")
                 .okHttpClient(NetworkFactory.getOkHttpObject())
                 .build()
         allProductsQuery = AllProductsQuery
